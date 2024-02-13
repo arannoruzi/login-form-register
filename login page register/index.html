@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#username").click(function () {
+                $("#user").animate({
+                    marginTop: '-2em',
+                });
+
+            });
+
+            $("#password").click(function () {
+                $("#pass_3").animate({
+                    marginTop: '-2em'
+                });
+            });
+
+            $("#username-Register").click(function () {
+                $("#user-register").animate({
+                    marginTop: '-2em'
+                });
+            });
+
+            $("#password-Register").click(function () {
+                $("#pass_3-register").animate({
+                    marginTop: '-2em'
+                });
+            });
+
+            $("#password-register-repeat").click(function () {
+                $("#pass_3-register-repeat").animate({
+                    marginTop: '-2em'
+                })
+            });
+
+            $(".circle-plus").click(function () {
+                $(".circle-plus").animate({
+                    width: "400px",
+                    height: "500px",
+                    borderRadius: "20px",
+                    marginLeft: "-0em",
+                    marginTop: "-0em",
+                }, 1000);
+
+                $(".icon-transform").animate({
+                    marginLeft: "13em"
+                }, 2000);
+
+                $(".register-form ,h3").animate({
+                    opacity: "1"
+                });
+
+            });
+
+            $(".circle-plus").click(function () {
+                $(".circle-plus").css("cursor", "default");
+                $(".icon-transform").css("cursor", "pointer");
+            });
+
+            $(".icon-transform").click(function () {
+                $(".password-register-repeat").animate({
+                    opacity: "hide"
+                }, 300);
+
+                $(".password-Register").animate({
+                    opacity: "hide"
+                }, 200);
+
+                $(".username-Register").animate({
+                    opacity: "hide"
+                }, 100);
+
+
+                $(".button-register").animate({
+                    opacity: "hide"
+                }, 1000);
+
+            });
+
+            var icon_transform = $(".icon-transform");
+            var circle_plus = $(".circle-plus");
+
+            icon_transform.click  (function () {
+                circle_plus.css("width", "100px"),
+                    circle_plus.css("height", "100px"),
+                    circle_plus.css("width", "100px")
+            });
+
+        });
+    </script>
+    <title>login</title>
+
+</head>
+
+<body>
+
+    <div class="section-container">
+        <form action="index.html" method="post" class="form">
+            <div class="login-form">
+                <h3>Login</h3>
+            </div>
+            <div class="username">
+                <label for="username" id="user">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="password">
+                <label for="password" id="pass_3">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="button">
+                <button type="submit">Go</button>
+            </div>
+        </form>
+        <form action="" method="post" class="circle-plus">
+            <div class="icon-transform"><i class="fa fa-times"></i></div>
+
+            <div class="register-form">
+                <h3>Register</h3>
+            </div>
+
+            <div class="username-Register">
+                <label for="username" id="user-register">Username</label>
+                <input type="text" id="username-Register">
+            </div>
+
+            <div class="password-Register">
+                <label for="password" id="pass_3-register">Password</label>
+                <input type="password" id="password-Register">
+            </div>
+
+            <div class="password-register-repeat">
+                <label for="password-register-repeat" id="pass_3-register-repeat">Repat Password</label>
+                <input type="password" id="password-register-repeat">
+            </div>
+            <div class="button-register">
+                <button type="submit">Next</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="assest/app.js"></script>
+</body>
+
+</html>

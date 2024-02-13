@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9acd32;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.section-container .form {
+    width: 400px;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 1px -5px rgba(143, 143, 143, 0.406);
+    overflow: hidden;
+}
+
+.section-container .form .login-form {
+    width: 100px;
+    height: 10px;
+    border-left: 4px solid rgb(244, 33, 33);
+    margin: 3em -1px;
+    padding: 1em 3em;
+    align-items: center;
+}
+
+.section-container .form .login-form h3 {
+    color: rgb(244, 33, 33);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin: -7px;
+    text-transform: uppercase;
+}
+
+.section-container .form .username {
+    margin: 1em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container .form .username label {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -1em;
+}
+
+.section-container .form .username input {
+    width: auto;
+    height: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid rgb(158, 158, 158);
+}
+
+.section-container .form .password {
+    margin: 5em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container .form .password label {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -1em;
+}
+
+.section-container .form .password input {
+    width: auto;
+    height: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(158, 158, 158);
+}
+
+.section-container .form .button {
+    margin: 2em 6em;
+}
+
+.section-container .form .button button {
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 20px;
+    color: rgb(158, 158, 158);
+    cursor: pointer;
+}
+
+.section-container .circle-plus {
+    width: 100px;
+    height: 100px;
+    margin: 2em 0em;
+    margin-left: 25em;
+    z-index: 10;
+    background: rgb(244, 33, 33);
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+}
+
+.section-container .circle-plus .icon-transform {
+    font-size: 25px;
+    color: #fff;
+    margin: 1.5em 1.7em;
+    position: absolute;
+}
+
+.section-container .circle-plus .register-form {
+    width: 100px;
+    height: 10px;
+    border-left: 4px solid #fff;
+    margin: 3em -0.5px;
+    padding: 1em 3em;
+    align-items: center;
+    opacity: 0;
+}
+
+.section-container .circle-plus .register-form h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: -7px;
+    opacity: 0;
+}
+
+.section-container .circle-plus .username-Register {
+    margin: 1em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container .circle-plus .username-Register label {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -1em;
+}
+
+.section-container .circle-plus .username-Register input {
+    width: auto;
+    height: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid rgb(158, 158, 158);
+}
+
+.section-container .circle-plus .password-Register {
+    margin: 5em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container .circle-plus .password-Register label {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -1em;
+}
+
+.section-container .circle-plus .password-Register input {
+    width: auto;
+    height: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid rgb(158, 158, 158);
+}
+
+.section-container .circle-plus .password-register-repeat {
+    margin: 5em 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container .circle-plus .password-register-repeat label {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -1em;
+}
+
+.section-container .circle-plus .password-register-repeat input {
+    width: auto;
+    height: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid rgb(158, 158, 158);
+}
+
+.section-container .circle-plus .button-register {
+    margin: 2em 5em;
+}
+
+.section-container .circle-plus .button-register button {
+    width: 250px;
+    height: 40px;
+    background: white;
+    color: rgb(244, 33, 33);
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
